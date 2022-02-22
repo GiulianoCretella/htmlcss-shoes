@@ -2,6 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+#red{
+    background-color: red;
+}
+
+#green{
+    background-color: green;
+}
+
+#yellow{
+    background-color: yellow;
 }
 
 /* barra di navigazione fissa */
@@ -9,20 +22,51 @@ nav ul{
     position: fixed;
     top: 5%;
     right: 5%;
+    z-index: 2;
 }
 nav ul li{
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: middle;
-    padding:15px;
-    margin: 0 15px;
 }
 
 a{
-    text-decoration: none;
+display: inline-block;
+text-decoration: none;
+width: 70px;
+height: 70px;
+background-color: white;
+font-weight: bold;
+color: black;
+border-radius: 50%;
+padding: 25%;
+vertical-align: middle;
+margin: 0 20px;
 }
 /* /barra di navigazione fissa */
+
+/* contenitori */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.shoes{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 200px;
+    text-align: center;
+    object-fit: cover;
+}
+h1{
+    font-size: 50px;
+    color: yellow;
+}
+
+#yellow .shoes h1{
+    color: green;
+}
+/* /contenitori */
